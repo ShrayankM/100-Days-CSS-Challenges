@@ -1,0 +1,97 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #4a627a;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 50px;
+	// background-color: #fff;
+}
+
+.nav__line {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	// width: 300px;
+	height: 4px;
+	// height: 2px;
+	background-color: #fff;
+	transition: all .4s ease-out;
+
+	&--top {
+		top: 45%;
+	}
+
+	&--bottom {
+		// margin-top: 48px;
+		// margin-top: 46px
+		top: 75%;
+	}
+}
+
+.nav__line-wide {
+	width: 300px;
+	height: 2px;
+}
+
+.nav__line-wide-top {
+	top: 0%;
+}
+
+.nav__line-wide-bottom {
+	top: 50%;
+	margin-top: 46px;
+}
+
+.nav__list {
+	width: 300px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	display: flex;
+	justify-content: space-around;
+
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+	opacity: 0;
+	transition: all .4s ease-in-out .4s;
+}
+
+.show {
+	opacity: 1;
+}

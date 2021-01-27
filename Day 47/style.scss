@@ -1,0 +1,68 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	background-color: #de4738;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+	align-content: space-between;
+
+	&:not(:first-child) {
+		margin-top: -5px;
+	}
+}
+
+.pixel:hover .pixel__label {
+    background-color: #e24e3f;
+}
+
+.pixel__checkbox {
+    display: none;
+}
+
+.pixel__checkbox:checked + .pixel__label {
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+.pixel__label {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e24e3f;
+    transition: all 0.2s;
+}

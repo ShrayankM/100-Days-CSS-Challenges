@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@keyframes fadeIn {
+  0% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0; }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1; } }
+
+@keyframes fadeOut {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1; }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0; } }
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #c7d6e1; }
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: 240px;
+  background-image: linear-gradient(40deg, #fff 0%, #fff 50%, #8391A1 50%, #8391A1 100%);
+  border-radius: 3px;
+  overflow: hidden;
+  background-size: 240%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  opacity: 0;
+  animation: fadeOut 1s ease-out; }
+  .card__number {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #fff; }
+  .card__heading {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #616e7d;
+    margin-top: 25px; }
+  .card__description {
+    font-size: 12px;
+    line-height: 17px;
+    color: #8391a1;
+    margin-top: -25px; }
+  .card__btn {
+    background-color: #3ca7fb;
+    color: #fff;
+    line-height: 38px;
+    font-size: 13px;
+    transition: all 0.4s; }
+    .card__btn:hover {
+      background-color: #2196f3; }
+
+.show {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  animation: fadeIn 1s ease-out; }
