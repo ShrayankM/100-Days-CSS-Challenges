@@ -1,0 +1,105 @@
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(to top right, #d2592a 0%, #fdb03a 100%);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+.btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    // background-color: #000;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 5px;
+    transition: all .4s;
+    font-size: 25px;
+    text-align: center;
+
+    &--positive {
+        left: 85px;
+        color: green;
+
+        &:hover {
+            background-color: green;
+            color: #fff;
+        }
+    }
+
+    &--negative {
+        left: 5px;
+        color: red;
+
+        &:hover {
+            background-color: red;
+            color: #fff;
+        }
+    }
+
+    &--counter {
+        left: 45px;
+        animation: fadeIn .4s;
+    }
+}
+
+.hide {
+    animation: fadeOut .4s;
+    opacity: 0;
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
