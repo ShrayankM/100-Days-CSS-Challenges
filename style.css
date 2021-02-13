@@ -12,9 +12,10 @@
   overflow: hidden;
   background: #fff;
   color: #333;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e16d6c; }
 
 .center {
   position: absolute;
